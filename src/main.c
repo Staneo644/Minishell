@@ -74,6 +74,7 @@ int	main(int argc, char **argv, char **envp)
 
 	signal(SIGINT, handle_sigint);
 	signal(SIGQUIT, SIG_IGN);
+	sh.env = NULL;
 	ft_init_env(&(sh.env), envp);
 	sh.close = 1;
 	if (argc >= 2 && argv[1][0] == '-' && argv[1][1] == 'c')

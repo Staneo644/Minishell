@@ -20,7 +20,7 @@ void	ft_env(t_list *env)
 	while (tmp)
 	{
 		if (ft_strchr(tmp->content, '='))
-			printf("%s\n", tmp->content);
+			printf("%s\n", (char *)tmp->content);
 		tmp = tmp->next;
 	}		
 }

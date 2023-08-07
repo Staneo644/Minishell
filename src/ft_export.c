@@ -31,7 +31,7 @@ void	export_no_args(t_list **env)
 			free(splitted);
 		}
 		else
-			printf("declare -x %s\n", tmp->content);
+			printf("declare -x %s\n", (char *)tmp->content);
 		tmp = tmp->next;
 	}
 }

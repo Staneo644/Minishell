@@ -55,11 +55,7 @@ char	*ft_str(char *a)
 char	*ft_strfjoin(char *s1, char *s2)
 {
 	char	*ret;
-	int		i;
-	int		j;
 
-	i = 0;
-	j = 0;
 	if (!s1)
 		return (ft_strdup((char *)s2));
 	if (!s2)
@@ -74,11 +70,7 @@ char	*ft_strfjoin(char *s1, char *s2)
 char	*ft_strjoinf(char *s1, char *s2)
 {
 	char	*ret;
-	int		i;
-	int		j;
 
-	i = 0;
-	j = 0;
 	if (!s1)
 		return (ft_strdup((char *)s2));
 	if (!s2)
@@ -93,11 +85,7 @@ char	*ft_strjoinf(char *s1, char *s2)
 char	*ft_strffjoin(char *s1, char *s2)
 {
 	char	*ret;
-	int		i;
-	int		j;
 
-	i = 0;
-	j = 0;
 	if (!s1)
 		return (ft_strdup((char *)s2));
 	if (!s2)

@@ -31,7 +31,7 @@ void	check_exit2(char *arg, int sign, int i)
 			exit_error(arg);
 		value = value * 10 + arg[i] - '0';
 		if ((value > LLONG_MAX && sign > 0)
-			|| (value > (unsigned long long)(-LLONG_MIN)
+			|| (value > (unsigned long long)(LLONG_MIN)
 			&& sign < 0))
 			exit_error(arg);
 		i++;

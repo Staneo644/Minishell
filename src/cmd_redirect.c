@@ -64,9 +64,6 @@ char	*ft_change_arg(char *str)
 
 int	ft_redirect_cmd(t_sh *sh, char **cmd, int j)
 {
-	int	i;
-
-	i = -1;
 	if (!cmd)
 		return (1);
 	else if (ft_strcmp(cmd[0], "exit") == 0 && !j)

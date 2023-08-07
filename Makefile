@@ -20,7 +20,7 @@ all : libft $(NAME)
 
 $(NAME) : $(OBJDIR)
 	echo "\x1b[34m $1[Compiling minishell]\x1b[0m"
-	$(CC) -lreadline -L ~/.brew/opt/readline/lib -I ~/.brew/opt/readline/include -lncurses libft/libft.a $(OBJDIR) -o $(NAME) $(CFLAGS)
+	$(CC) $(OBJDIR) -o $(NAME) -L~/.brew/opt/readline/lib -lreadline -lncurses -L./libft -lft $(CFLAGS)
 	echo "\x1b[34m $1[Done]\x1b[0m"
 
 libft : 
